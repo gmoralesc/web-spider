@@ -6,7 +6,8 @@
   "scripts": {
     "commit": "git-cz",
     "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "author": "Gustavo Morales",
   "license": "ISC",
@@ -16,7 +17,9 @@
     "slug": "^0.9.1"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0"
+    "chai": "^3.5.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "mocha": "^3.2.0"
   },
   "config": {
     "commitizen": {
